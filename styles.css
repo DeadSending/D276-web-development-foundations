@@ -1,0 +1,81 @@
+/*element selector*/
+
+h1 {
+	font-size: xx-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    color: rgb(220,220,220);
+	background-color: rgb(135,155,135);
+}
+/*class selelctor*/
+body {
+	justify-content: center;
+    align-items: center;
+	margin: 4%;
+	padding:6%;
+}
+
+nav {
+    position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	font-size:larger;
+}
+
+.navigation-bar a {
+	color: rgb(220,220,220);
+	text-decoration:wavy
+	padding: 10px 20px;
+	display: inline-block;
+	font-size: large;
+}
+
+#contact-and-portfolio {
+	width: 100%;
+	display: inline-block;
+}
+.top-box {
+	width: 30%;
+	display: inline-block;
+}
+
+/*id selector - use # to select all elements with this id, of which there should only be one
+
+descendant selector use an element tag and then another tag that is a descendant tag, for ex:
+section div {...} or p span
+
+pseudo-class selector -matches elements based on user behavior or element metinformation - the selector is specified with an element or class selector, a colon, anda  pseudo-class name.
+ex: a:hover selects only the anchor element the mouse is hovering over!
+
+universal selector - specified using an asterix - matches all elements in the webpage, for example, every single thing
+liek so:
+* {
+	margin:0;
+	padding:0;
+}
+
+font property
+font:
+
+color property
+color:
+
+font-style property
+font-style:
+
+background-color property
+background-color, background-image, background
+
+margin property
+padding property
+border property
+margin:
+padding:
+border:
+
+
+at least 1 list-style property
+*/
