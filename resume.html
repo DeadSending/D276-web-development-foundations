@@ -4,30 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Connor McGaughey - Resume</title>
-        <link rel="stylesheet" href="/master.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
-        <i>A hypothetical resume is acceptable for this task</i>       
-        <h1>Connor McGaughey - Resume</h1>
+    <body>      
+        <h1>Connor McGaughey</h1>
         <nav id="navigation-bar">nav</nav>
         <main>
-            <section id="contact-and-portfolio">
-                <div id="date">date:</div>
-                <div id="address">
+		 <div id="date">date:</div>
+            
+			<section id="contact-and-portfolio">
+                <span id="address"  class="top-box">
                     <address>
                     15602 Northwood Dr.<br>
                     Porter, TX<br>
                     77365<br>
                     </address>
-                </div>
-                
-                <div id="contact-information">
-                    <span id="phone">713-515-1887</span>
-                    <span id="email">connor.ryan.mcgaughey@proton.me</span>
-                    <span id="github"><a href="https://github.com/DeadSending" target="">github</a></span>
-                    <span id="portfolio">portfolio</span>
-                </div>
-            </section>
+                </span>
+			
+				<span id="contact-information" class="top-box">
+					<span id="phone">713-515-1887</span><br>
+					<span id="email">connor.ryan.mcgaughey@proton.me</span><br>
+				</span>
+				
+				<span id="portfolio-links" class="top-box">
+					<span id="github"><a href="https://github.com/DeadSending" target="">github</a></span><br>
+					<span id="portfolio">portfolio</span>
+				</span>
+			</section>
             
             <section id="work-experience" class="section-name">
                 <h2>Work Experience</h2>
@@ -38,9 +41,9 @@
                             <div class="job-title"><h4>Repair Technician</h4></div><div class="dates-worked">2025-Present</div>
                                 <div class="roles-and-responsibilities">
                                     <ul>
-                                        <li>Diagnose, Repair, Test and Calibrate Gas Watch Analyzers, HMI Touchscreens, and Fourier Transform Infrared Spectrometer</li>
-                                        <li>Document and update documentation on all procedures, inventory, parts-lists, and personnel related to GWA, HMI, and FTIRE</li>
-                                        <li>Develop and maintain testing scripts, TCL and Batch, document, run, and maintain engineering software updates</li>
+                                        <li><strong>Diagnose, Repair, Test and Calibrate</strong><em> Gas Watch Analyzers, HMI Touchscreens, and Fourier Transform Infrared Spectrometer</em></li>
+                                        <li>Document and update documentation on all procedures, inventory, parts-lists, and personnel related to <em>GWA, HMI, and FTIR</em></li>
+                                        <li>Develop and maintain testing scripts, <em>TCL and Batch</em>, document, run, and maintain engineering software updates</li>
                                         <li>Train and Assist in new technologies and procedures involving all M/D Totco Division repair equipment and associated repair methods</li>
                                     </ul>
                                 </div>
@@ -52,7 +55,8 @@
                             <div class="job-title"><h4>Motherboard Test Engineer Technician</h4></div><div>2022-2025</div>
                                 <div class="role-and-responsibilities">
                                     <ul>
-                                        <li>Manage Motherboard Test Line, including development and maintenance of testing scripts for many models, as well as components such as cpus, gpus, memory, and docking stations., ensuring no conflicts due to dependencies or outdated software, and ensuring test operators have correct software authorization and permissions</li>
+                                        <li>Manage Motherboard Test Line, including development and maintenance of <strong>batch and bash testing scripts</strong> for a variety of makes and models, as well as individual components such as <em>cpus, gpus, memory, and docking stations</em>, ensuring contingencies for <em>software versionsand dependencies</em></li>
+										<li>Server and Database management and maintenance</li>
                                         <li>Develop and manage inventory tracking software, and associated procedures -- ensuring test operators have all required hardware to perform functional testing</li>
                                         <li>Managing Ticketing System to ensure test operators issues are resolved in a timely manner to keep production running and the units flowing</li>
                                     </ul>
@@ -64,9 +68,10 @@
                             <div class="job-title"><h4>Dell Whole Unit Test Engineer Technician</h4></div><div class="dates-worked">2021-2022</div>
                                 <div class="roles-and-responsibilities">
                                     <ul>
-                                        <li>Support Whole Unit Repair test line, specifically the </li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>Support Whole Unit Repair test line, troubleshooting <strong>driver conflicts, forcing/rolling back bios updates</strong>, ensuring functionality, resolving errors in script </li>
+                                        <li>Compile and Update failure rates, updating component and software functional test order to reduce time to identification of failure and increase production efficiency</li>
+                                        <li><strong>Inventory Management</strong> and documentation as well as authorization and authentication of testers of network.</li>
+                                        <li>Test Server Monitoring and troubleshooting</li>
                                     </ul>
                                 </div>
                             </div>
@@ -76,9 +81,9 @@
                             <div class="job-title"><h4>Dell Whole Unit Repair Technician</h4></div><div class="dates-worked">2020-2021</div>
                                 <div class="roles-and-responsibilities">
                                     <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>Diagnose and Troubleshoot Customer Units</li>
+                                        <li>Identify and resolve hardware and software issues on customer units, replace components, update <em>bios</em>, re-imaging hard drive</li>
+                                        <li>Organization - documentations of all parts and procedures, keeping everything organized.</li>
                                     </ul>
                                 </div>
                         </div>
@@ -87,9 +92,9 @@
                             <div class="job-title"><h4>Motherboard Test Operator</h4></div><div class="dates-worked">2019-2020</div>
                                 <div class="roles-and-responsibilities">
                                     <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>Test motherboards for full functionality by replacing components with known good parts</li>
+                                        <li>Documenting and escalating issues to engineers</li>
+                                        <li>Learn new systems and procedures to test incoming newly acquired units</li>
                                     </ul>
                                 </div>
                         </div>
@@ -114,8 +119,10 @@
             </section>
 
             <hr>
-            <section id="interests" class="section-name">
-                <h2>Interests</h2>
+            <section id="skills" class="section-name">
+                <h2>Skills</h2>
+				<hr>
+				<span id="Operating Systems">Operating SystemsWindows XP/7/8/10/11/PE, Ubuntu Linux, Mac OS, IOS,</span><span id="scripting-languages">scripting: powershell, shell, bash, batch, python</span><span id="programming-languages">programing languages: C/C++, C#, Javascript, Python, R</span><span id="ide-list">IDEs: Visual Studio, Visual Studio Code, Xcode, Notepad++</span>
             </section>
 
             <footer>footer</footer>
