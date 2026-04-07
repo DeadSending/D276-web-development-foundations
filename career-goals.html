@@ -11,16 +11,44 @@
             <img>
             <audio></audio>
             <video></video>
-            <form>
-                <input type="text" placeholder="first name">
-                <input type="text" placeholder="last name">
-                <input type="text" placeholder="company name">
-                <input type="email" placeholder="email address">
-                <input type="tel" placeholder="555-555-5555">
-                <input type="text" placeholder="message">
-                <radio>am, pm, anytime</radio>
-                <select>phone, email, or text</select>
-                <button type="submit">Submit</button>
+            <form action="https://example.org" method="POST">
+                <p>
+                    <label for="first">First Name:</label>
+                    <input type="text" name="first" id="first" placeholder="first name">
+                </p>
+                <p>
+                    <label for="last">LastName:</label>
+                    <input type="text" name="last" id="last" placeholder="last name">
+                </p>
+                <p>
+                    <label for="company-name">Company Name:</label>
+                    <input type="text" name="company-name" id="company-name" placeholder="company name">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="email address">
+                </p>
+                <p>
+                    <label for="telephone-number">Telephone Number:</label>
+                    <input type="tel" placeholder="555-555-5555">
+                </p>
+                <p>
+                    <label for="message">Message:</label>
+                    <input type="text" placeholder="message">
+                </p>
+                <p>
+                    <label for="best-contact-time">Best Contact Time</label>
+                    <input type="radio" name="best-contact-time" value="AM" id="AM">
+                    <input type="radio" name="best-contact-time" value="PM" id="PM">
+                    <input type="radio" name="best-contact-time" value="Anytime" id="Anytime">
+                </p>
+                
+                <select for="preferred-contact">
+                    <option value="phone">phone</option>
+                    <option value="email">email</option>
+                    <option value="text">text</option>
+                </select>
+                <input type="submit" value="Submit">
             </form>
         </main>
 
