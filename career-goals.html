@@ -8,33 +8,36 @@
         <h1>Career-Goals</h1>
         <nav></nav>
         <main>Container for the document's primary content
-            <img>
-            <audio></audio>
-            <video></video>
+            <img src="/my-image.jpg">
+
+            <audio><source src="/the-westerlies-antimatter.mp3" autoplay controls loop></audio>
+            <video controls width="600">
+                <source src="">
+            </video>
             <form action="https://example.org" method="POST">
                 <p>
                     <label for="first">First Name:</label>
-                    <input type="text" name="first" id="first" placeholder="first name">
+                    <input type="text" name="first" id="first" placeholder="first name" required>
                 </p>
                 <p>
                     <label for="last">LastName:</label>
-                    <input type="text" name="last" id="last" placeholder="last name">
+                    <input type="text" name="last" id="last" placeholder="last name" required>
                 </p>
                 <p>
                     <label for="company-name">Company Name:</label>
-                    <input type="text" name="company-name" id="company-name" placeholder="company name">
+                    <input type="text" name="company-name" id="company-name" placeholder="company name" required>
                 </p>
                 <p>
                     <label for="email">Email:</label>
-                    <input type="email" placeholder="email address">
+                    <input type="email" placeholder="email address" required>
                 </p>
                 <p>
                     <label for="telephone-number">Telephone Number:</label>
-                    <input type="tel" placeholder="555-555-5555">
+                    <input type="tel" placeholder="555-555-5555" required>
                 </p>
                 <p>
                     <label for="message">Message:</label>
-                    <input type="text" placeholder="message">
+                    <input type="text" name="message" id="message" placeholder="message" required>
                 </p>
                 <p>
                     <label for="best-contact-time">Best Contact Time</label>
@@ -43,7 +46,7 @@
                     <input type="radio" name="best-contact-time" value="Anytime" id="Anytime">
                 </p>
                 
-                <select for="preferred-contact">
+                <select for="preferred-contact" required>
                     <option value="phone">phone</option>
                     <option value="email">email</option>
                     <option value="text">text</option>
