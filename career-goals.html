@@ -1,60 +1,100 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Career-goals</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Career-Goals</h1>
-        <nav></nav>
-        <main>Container for the document's primary content
-            <img src="/my-image.jpg">
+		<nav id="navigation-bar">
+            <div id="nav-link-date-container">
+                <div id="nav-link-container">
+                    <a href="resume.html">Resume</a>
+                    <a href="cover-letter.html">Cover Letter</a>
+                    <a href="career-goals.html">Career Goals</a>
+                    <a href="resume.html#table">Contact</a>
+                </div>
+                <div id="date">
+                date:
+                </div>
+            </div>
+        </nav>
+        <main>
+			<h1>Career-Goals</h1>
+			<section class="section-name">
+				<div id="goals">
+					<p>
+					<article>Obtaining a challenging position as an entry or junior level software engineer at my current organization, leveraging my problem-solving, patience, and determination
+					as well as my creativity and out-of-the-box thinking to create unique meaningful software that is intuitive and memorable, leaving clients always coming back as
+					they have grown to rely on our reliable products.</article>
+					
+					</p>
+				</div>
+			</section>
+			<section class="section-name">	
+				<div class="media">
+					<img src="/my-image.jpg">
 
-            <audio><source src="/the-westerlies-antimatter.mp3" autoplay controls loop></audio>
-            <video controls width="600">
-                <source src="">
-            </video>
-            <form action="https://example.org" method="POST">
-                <p>
-                    <label for="first">First Name:</label>
-                    <input type="text" name="first" id="first" placeholder="first name" required>
-                </p>
-                <p>
-                    <label for="last">LastName:</label>
-                    <input type="text" name="last" id="last" placeholder="last name" required>
-                </p>
-                <p>
-                    <label for="company-name">Company Name:</label>
-                    <input type="text" name="company-name" id="company-name" placeholder="company name" required>
-                </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" placeholder="email address" required>
-                </p>
-                <p>
-                    <label for="telephone-number">Telephone Number:</label>
-                    <input type="tel" placeholder="555-555-5555" required>
-                </p>
-                <p>
-                    <label for="message">Message:</label>
-                    <input type="text" name="message" id="message" placeholder="message" required>
-                </p>
-                <p>
-                    <label for="best-contact-time">Best Contact Time</label>
-                    <input type="radio" name="best-contact-time" value="AM" id="AM">
-                    <input type="radio" name="best-contact-time" value="PM" id="PM">
-                    <input type="radio" name="best-contact-time" value="Anytime" id="Anytime">
-                </p>
-                
-                <select for="preferred-contact" required>
-                    <option value="phone">phone</option>
-                    <option value="email">email</option>
-                    <option value="text">text</option>
-                </select>
-                <input type="submit" value="Submit">
-            </form>
+					<audio><source src="/the-westerlies-antimatter.mp3" autoplay controls loop></audio>
+					<video controls width="600">
+						<source src="">
+					</video>
+				</div>
+				<div id="request-contact">
+					<form action="https://example.org" method="POST">
+						<p>
+							<label for="first">First Name:</label>
+							<input type="text" name="first" id="first" placeholder="first name" required>
+						</p>
+						<p>
+							<label for="last">LastName:</label>
+							<input type="text" name="last" id="last" placeholder="last name" required>
+						</p>
+						<p>
+							<label for="company-name">Company Name:</label>
+							<input type="text" name="company-name" id="company-name" placeholder="company name" required>
+						</p>
+						<p>
+							<label for="email">Email:</label>
+							<input type="email" placeholder="email address" required>
+						</p>
+						<p>
+							<label for="telephone-number">Telephone Number:</label>
+							<input type="tel" placeholder="555-555-5555" required>
+						</p>
+						<p>
+							<label for="message">Message:</label>
+							<input type="text" name="message" id="message" placeholder="message" required>
+						</p>
+						<p>
+							<label for="best-contact-time">Best Contact Time</label>
+							<input type="radio" name="best-contact-time" value="AM" id="AM">
+							<input type="radio" name="best-contact-time" value="PM" id="PM">
+							<input type="radio" name="best-contact-time" value="Anytime" id="Anytime">
+						</p>
+						
+						<select for="preferred-contact" required>
+							<option value="phone">phone</option>
+							<option value="email">email</option>
+							<option value="text">text</option>
+						</select>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</section>
+			<footer></footer>
         </main>
+		<script>
+    const dateElement = document.getElementById("date");
+    const currentDate = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement.textContent = `Date: ${currentDate.toLocaleDateString(undefined, options)}`;
+    Console.log("Hello, World!");
+    Console.log("This is my resume!");
+    Console.log(`Today's date is ${currentDate.toLocaleDateString(undefined, options)}`);
 
-        <footer>Container for the content descriptive information about the webpage like author, copyright, or date modified</footer>
+/*Inline Javascript to populate the date within div defined in Text and Content */
+// Inline Javascript to write an appropriate message or value to the console i.e. Console.log("Hello, World!");
+</script>
     </body>
 </html>

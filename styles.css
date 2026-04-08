@@ -1,20 +1,18 @@
-/*element selector*/
 
-
-
-html {
-    
+/*Universal selector */
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-/*class selelctor*/
+/*element selector*/
 body, html {
 	
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	justify-content: center;
     align-items: center;
 	color: rgb(189, 185, 185);
 	background-color: rgb(37, 62, 59);
 	margin: 0px;
 	padding: 0px;
+	height: 100%;
 }
 
 nav {
@@ -25,7 +23,7 @@ nav {
 	background-color: rgb(220, 234, 235);
 	border: 1px solid rgb(207, 207, 207);
 }
-
+/*id selector*/
 #nav-link-date-container {
 	display: flex;
 	flex-wrap: nowrap;
@@ -52,6 +50,7 @@ div#date {
 	color: rgb(37, 39, 37);
 }
 
+/*pseudo-class selector */
 a:link {
 		color: rgb(78, 96, 78);
 	}
@@ -70,8 +69,6 @@ a:visited {
 	
 main {
 	width: 80%;
-	border-left:rgb(189, 185, 185) solid 1px;
-	border-right:rgb(189, 185, 185) solid 1px;
 	margin: 4%;
 	margin: auto;
 	display:flex;
@@ -81,17 +78,19 @@ main {
 
 h1 {
 	font-size: 5REM;
-	margin-bottom: 0px;
+	margin-bottom: 2%;
+	margin-top:5%;
 }
 
 #contact-and-portfolio {
-	width: 80%;
+	width: 84%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	
 }
 
+/*class selector*/
 .top-box {
 	width: 30%;
 	display: inline-block;
@@ -100,11 +99,19 @@ h1 {
 	border-radius: 5px;
 }
 
+section h2 {
+	font-size: 28px;
+	margin-bottom: -.5%;
+	margin-left: 3%;
+}
+
  .section-name {
 	width: 80%;
 	border:rgb(189, 185, 185) solid 1px;
-	margin: 4%;
-	padding: 2%;
+	margin: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
 	border-radius: 5px;
 }
 
@@ -112,19 +119,108 @@ h1 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-bottom: -3%;
+	margin-top: -4%;
+	margin-bottom:-4%;
 }
 
+.job-title {
+	font-size: 18px;
+	align-items: center;
+}
+
+.dates-worked {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.company-name {
+	font-size: 20px;
+	margin-left: 5%;
+}
+
+.role-container {
+	margin-left: 8%;
+	margin-right:12%;
+}
+
+#education {
+}
+
+#universities {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: space-between;
+}
+.university-container {
+	margin-left: 8%;
+	margin-right: 12%;
+	margin-bottom: 2%;
+}
+
+.name-years {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.university-name {
+	font-size: 20px;
+}
+
+.dates-attended {
+	font-weight: strong;
+}
+
+.degree-name {
+	margin-left: 5%;
+}
+
+
+#skill-list {
+	display: flex;
+	flex-direction: column;
+	margin-left: 8%;
+	margin-right: 12%;
+}
 ul {
 	list-style: circle inside;
 }
 
-/*id selector - use # to select all elements with this id, of which there should only be one
+table, th, td{
+	border: 1px solid white;
+	border-collapse: collapse;
+}
 
-descendant selector use an element tag and then another tag that is a descendant tag, for ex:
+#goals {
+	padding-left: 12%;
+	padding-right: 8%;
+}
+.media {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 12%;
+	padding-right: 8%;
+}
+
+#request-contact {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 12%;
+	padding-right: 8%;
+	
+}
+/*descendant selector use an element tag and then another tag that is a descendant tag, for ex:
 section div {...} or p span
 
-pseudo-class selector -matches elements based on user behavior or element metinformation - the selector is specified with an element or class selector, a colon, anda  pseudo-class name.
-ex: a:hover selects only the anchor element the mouse is hovering over!
+
 
 universal selector - specified using an asterix - matches all elements in the webpage, for example, every single thing
 liek so:
@@ -143,7 +239,9 @@ font-style property
 font-style:
 
 background-color property
-background-color, background-image, background
+background-color, 
+background-image, 
+background
 
 margin property
 padding property

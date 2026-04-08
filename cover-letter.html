@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cover-Letter</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+	<nav id="navigation-bar">
+            <div id="nav-link-date-container">
+                <div id="nav-link-container">
+                    <a href="resume.html">Resume</a>
+                    <a href="cover-letter.html">Cover Letter</a>
+                    <a href="career-goals.html">Career Goals</a>
+                    <a href="resume.html#table">Contact</a>
+                </div>
+                <div id="date">
+                date:
+                </div>
+            </div>
+            
+            
+            
+        </nav>
+        <main>
+		
         <h1>Cover-letter</h1>
-        <nav></nav>
-        <!--span, paragraph, horizontal rule, strong, em, mark-->
-        <main>container for the document's primary content
-            <section>container for distinct parts of a document, such as a chapter</section>
+            <section class="section-name">
+				<p id="contact">
+				Connor Mcgaughey<br>
+				555-555-5555<br>
+				Connor.McGaughey@nov.com<br>
+				Houston, TX, 77365<br>
+				<a href="https:\\Github.com\DeadSending">Github</a><br>
+				<br>
+				<div id="date"></div><br>
+				</p>
+				
+				<p id="greeting+intro">
+				To Whom it May Concern,<br>
+				My name is Connor McGaughey and I was inquiring into the position of Software Engineer listed on indeed.
+				Needless to say, I was thrilled when I discovered the available position as I believe I would be a 
+				excellent asset to the company and we would truly complement each other.
+				</p>
+				<p id="main">
+				I have nearly a decade of experience in scripting and programming as well as the software tools neccessary to the job.
+				I'm experienced in multiple operating systems, databases, as well as the maintenance and configuration of backend servers and
+				services, network devices, computers, hardware troubleshooting, and even version control. I'm a quick learner, a hard worker,
+				and a team player -- I will do whatever is necessary for the success of the team and the company, including learning
+				new languages and tools.
+				</p>
+				<p id="closing">
+				Once again, I want to reaffirm my commitment to doing what it takes to get the job done. I am very excited and hope 
+				to hear back from you at your earliest convenience in order to set up a meeting where we could discuss the position
+				in more detail. 
+				</p>
+				<p id="ending">
+				Sincerely,<br>
+				Connor McGaughey
+				</p>
+			</section>
         </main>
+		<script>
+    const dateElement = document.getElementById("date");
+    const currentDate = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement.textContent = `Date: ${currentDate.toLocaleDateString(undefined, options)}`;
+    Console.log("Hello, World!");
+    Console.log("This is my resume!");
+    Console.log(`Today's date is ${currentDate.toLocaleDateString(undefined, options)}`);
+
+/*Inline Javascript to populate the date within div defined in Text and Content */
+// Inline Javascript to write an appropriate message or value to the console i.e. Console.log("Hello, World!");
+</script>
         
     </body>
 </html>
