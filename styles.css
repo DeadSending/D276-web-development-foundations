@@ -1,20 +1,20 @@
 /*element selector*/
 
-h1 {
-	font-size: xx-large;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 
 html {
-    color: rgb(220,220,220);
-	background-color: rgb(135,155,135);
+    
 }
 /*class selelctor*/
-body {
+body, html {
+	
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	justify-content: center;
     align-items: center;
-	margin: 4%;
-	padding:6%;
+	color: rgb(189, 185, 185);
+	background-color: rgb(37, 62, 59);
+	margin: 0px;
+	padding: 0px;
 }
 
 nav {
@@ -22,24 +22,100 @@ nav {
 	top: 0;
 	width: 100%;
 	z-index: 1000;
-	font-size:larger;
+	background-color: rgb(220, 234, 235);
+	border: 1px solid rgb(207, 207, 207);
 }
 
-.navigation-bar a {
-	color: rgb(220,220,220);
-	text-decoration:wavy
-	padding: 10px 20px;
+#nav-link-date-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#nav-link-container {
 	display: inline-block;
-	font-size: large;
+	align-items: center;
+}
+#nav-link-container a {
+	font-size: 2REM;
+	justify-content: left;
+	margin-right: 1.5REM;
+}
+
+
+div#date {
+	display: inline-block;
+	font-size: 2REM;
+	justify-content: right;
+	color: rgb(37, 39, 37);
+}
+
+a:link {
+		color: rgb(78, 96, 78);
+	}
+
+a:hover {
+		color: rgb(40, 16, 82);
+	}
+
+a:active {
+		color: rgb(42, 42, 139);
+	}
+
+a:visited {
+		color: rgb(37, 39, 37);
+	}
+	
+main {
+	width: 80%;
+	border-left:rgb(189, 185, 185) solid 1px;
+	border-right:rgb(189, 185, 185) solid 1px;
+	margin: 4%;
+	margin: auto;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-size: 5REM;
+	margin-bottom: 0px;
 }
 
 #contact-and-portfolio {
-	width: 100%;
-	display: inline-block;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
 }
+
 .top-box {
 	width: 30%;
 	display: inline-block;
+	border:rgb(189, 185, 185) solid 2px;
+	padding: 1%;
+	border-radius: 5px;
+}
+
+ .section-name {
+	width: 80%;
+	border:rgb(189, 185, 185) solid 1px;
+	margin: 4%;
+	padding: 2%;
+	border-radius: 5px;
+}
+
+.title-date {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+ul {
+	list-style: circle inside;
 }
 
 /*id selector - use # to select all elements with this id, of which there should only be one

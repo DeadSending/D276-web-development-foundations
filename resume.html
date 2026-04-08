@@ -7,38 +7,55 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>      
-        <h1>Connor McGaughey</h1>
-        <nav id="navigation-bar">nav</nav>
-        <main>
-		 <div id="date">date:</div>
+        
+        <nav id="navigation-bar">
+            <div id="nav-link-date-container">
+                <div id="nav-link-container">
+                    <a href="resume.html">Resume</a>
+                    <a href="cover-letter.html">Cover Letter</a>
+                    <a href="career-goals.html">Career Goals</a>
+                </div>
+                <div id="date">
+                date:
+                </div>
+            </div>
             
-			<section id="contact-and-portfolio">
+            
+            
+        </nav>
+        <main>
+		
+            <h1>Connor McGaughey</h1>
+            <section id="contact-and-portfolio">
                 <span id="address"  class="top-box">
+                    Address:<br>
                     <address>
                     15602 Northwood Dr.<br>
                     Porter, TX<br>
                     77365<br>
                     </address>
                 </span>
-			
-				<span id="contact-information" class="top-box">
-					<span id="phone">713-515-1887</span><br>
-					<span id="email">connor.ryan.mcgaughey@proton.me</span><br>
-				</span>
-				
-				<span id="portfolio-links" class="top-box">
-					<span id="github"><a href="https://github.com/DeadSending" target="">github</a></span><br>
-					<span id="portfolio">portfolio</span>
-				</span>
-			</section>
+            
+                <span id="contact-information" class="top-box">
+                    Phone:<br>
+                    <span id="phone">713-515-1887</span><br>
+                    Email:<br>
+                    <span id="email">connor.ryan.mcgaughey@proton.me</span><br>
+                </span>
+                
+                <span id="portfolio-links" class="top-box">
+                    <span id="github"><a href="https://github.com/DeadSending" target="">github</a></span><br>
+                    <span id="portfolio">portfolio</span>
+                </span>
+            </section>
             
             <section id="work-experience" class="section-name">
                 <h2>Work Experience</h2>
                     
-                    <div id="nov" class="company-name"><h3>National Oilwell Varco</h3></div>
+                    <div id="nov" class="company-name"><h3>National Oilwell Varco</h3><hr></div>
 
                         <div id="nov-repair-tech" class="role-container"></div>
-                            <div class="job-title"><h4>Repair Technician</h4></div><div class="dates-worked">2025-Present</div>
+                            <div class="title-date"><div class="job-title"><h4>Repair Technician</h4></div><div class="dates-worked">2025-Present</div></div>
                                 <div class="roles-and-responsibilities">
                                     <ul>
                                         <li><strong>Diagnose, Repair, Test and Calibrate</strong><em> Gas Watch Analyzers, HMI Touchscreens, and Fourier Transform Infrared Spectrometer</em></li>
@@ -49,15 +66,18 @@
                                 </div>
                         </div>
 
-                    <div id="csat-solutions" class="company-name"><h3>CSAT Solutions</h3></div>
+                    <div id="csat-solutions" class="company-name"><h3>CSAT Solutions</h3><hr></div>
 
                         <div class="role-container">
-                            <div class="job-title"><h4>Motherboard Test Engineer Technician</h4></div><div>2022-2025</div>
-                                <div class="role-and-responsibilities">
-                                    <ul>
-                                        <li>Manage Motherboard Test Line, including development and maintenance of <strong>batch and bash testing scripts</strong> for a variety of makes and models, as well as individual components such as <em>cpus, gpus, memory, and docking stations</em>, ensuring contingencies for <em>software versionsand dependencies</em></li>
-										<li>Server and Database management and maintenance</li>
-                                        <li>Develop and manage inventory tracking software, and associated procedures -- ensuring test operators have all required hardware to perform functional testing</li>
+                            <div class="title-date">
+                                <div class="job-title"><h4>Motherboard Test Engineer Technician</h4></div>
+                                <div class="dates-worked">2022-2025</div>
+                            </div>
+                            <div class="role-and-responsibilities">
+                                <ul>
+                                    <li>Manage Motherboard Test Line, including development and maintenance of <strong>batch and bash testing scripts</strong> for a variety of makes and models, as well as individual components such as <em>cpus, gpus, memory, and docking stations</em>, ensuring contingencies for <em>software versionsand dependencies</em></li>
+									<li>Server and Database management and maintenance</li>
+                                    <li>Develop and manage inventory tracking software, and associated procedures -- ensuring test operators have all required hardware to perform functional testing</li>
                                         <li>Managing Ticketing System to ensure test operators issues are resolved in a timely manner to keep production running and the units flowing</li>
                                     </ul>
                                 </div>
@@ -65,12 +85,15 @@
                         </div> 
 
                         <div class="role-container">
-                            <div class="job-title"><h4>Dell Whole Unit Test Engineer Technician</h4></div><div class="dates-worked">2021-2022</div>
-                                <div class="roles-and-responsibilities">
-                                    <ul>
-                                        <li>Support Whole Unit Repair test line, troubleshooting <strong>driver conflicts, forcing/rolling back bios updates</strong>, ensuring functionality, resolving errors in script </li>
-                                        <li>Compile and Update failure rates, updating component and software functional test order to reduce time to identification of failure and increase production efficiency</li>
-                                        <li><strong>Inventory Management</strong> and documentation as well as authorization and authentication of testers of network.</li>
+                            <div class="title-date">
+                                <div class="job-title"><h4>Dell Whole Unit Test Engineer Technician</h4><hr></div>
+                                <div class="dates-worked">2021-2022</div>
+                            </div>
+                            <div class="role-and-responsibilities">
+                                <ul>
+                                    <li>Support Whole Unit Repair test line, troubleshooting <strong>driver conflicts, forcing/rolling back bios updates</strong>, ensuring functionality, resolving errors in script </li>
+                                    <li>Compile and Update failure rates, updating component and software functional test order to reduce time to identification of failure and increase production efficiency</li>
+                                    <li><strong>Inventory Management</strong> and documentation as well as authorization and authentication of testers of network.</li>
                                         <li>Test Server Monitoring and troubleshooting</li>
                                     </ul>
                                 </div>
@@ -78,9 +101,12 @@
                         </div>
 
                         <div class="role-container">
-                            <div class="job-title"><h4>Dell Whole Unit Repair Technician</h4></div><div class="dates-worked">2020-2021</div>
-                                <div class="roles-and-responsibilities">
-                                    <ul>
+                            <div class="title-date">
+                                <div class="job-title"><h4>Dell Whole Unit Repair Technician</h4><hr></div>
+                                <div class="dates-worked">2020-2021</div>
+                            </div>
+                            <div class="role-and-responsibilities">
+                                <ul>
                                         <li>Diagnose and Troubleshoot Customer Units</li>
                                         <li>Identify and resolve hardware and software issues on customer units, replace components, update <em>bios</em>, re-imaging hard drive</li>
                                         <li>Organization - documentations of all parts and procedures, keeping everything organized.</li>
@@ -89,8 +115,11 @@
                         </div>
 
                         <div class="role-container">
-                            <div class="job-title"><h4>Motherboard Test Operator</h4></div><div class="dates-worked">2019-2020</div>
-                                <div class="roles-and-responsibilities">
+                            <div class="title-date">
+                                <div class="job-title"><h4>Motherboard Test Operator</h4><hr></div>
+                                <div class="dates-worked">2019-2020</div>
+                            </div>
+                            <div class="role-and-responsibilities">
                                     <ul>
                                         <li>Test motherboards for full functionality by replacing components with known good parts</li>
                                         <li>Documenting and escalating issues to engineers</li>
@@ -99,8 +128,6 @@
                                 </div>
                         </div>
             </section>
-
-            <hr>
 
             <section id="education" class="section-name">
                 <h2>Education</h2>
@@ -117,8 +144,6 @@
                     <div class="degree-name">Status: Associate of Arts</div>
                 </div>
             </section>
-
-            <hr>
             <section id="skills" class="section-name">
                 <h2>Skills</h2>
 				<hr>
@@ -140,11 +165,17 @@
             </tr>
             </table>
            </section>
-                                                                                                                                                                                                                                                                                                                                                                                                                                        
-<strong>strong</strong>
-<em>emphasis</em>
+                           
 </main>
 <script>
+    const dateElement = document.getElementById("date");
+    const currentDate = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement.textContent = `Date: ${currentDate.toLocaleDateString(undefined, options)}`;
+    Console.log("Hello, World!");
+    Console.log("This is my resume!");
+    Console.log(`Today's date is ${currentDate.toLocaleDateString(undefined, options)}`);
+
 /*Inline Javascript to populate the date within div defined in Text and Content */
 // Inline Javascript to write an appropriate message or value to the console i.e. Console.log("Hello, World!");
 </script>
