@@ -21,7 +21,7 @@
         </nav>
         <main>
 			<h1>Career-Goals</h1>
-			<section class="section-name">
+			<section class="section-name-career">
 				<div id="goals">
 					<p>
 					<article>Obtaining a challenging position as an entry or junior level software engineer at my current organization, leveraging my problem-solving, patience, and determination
@@ -31,7 +31,7 @@
 					</p>
 				</div>
 			</section>
-			<section class="section-name">	
+			<section class="section-name-career">	
 				<div class="media">
 					<img src="/my-image.jpg">
 
@@ -42,36 +42,36 @@
 				</div>
 				<div id="request-contact">
 					<form action="https://example.org" method="POST">
-						<p>
+						<div>
 							<label for="first">First Name:</label>
 							<input type="text" name="first" id="first" placeholder="first name" required>
-						</p>
-						<p>
+						</div>
+						<div>
 							<label for="last">LastName:</label>
 							<input type="text" name="last" id="last" placeholder="last name" required>
-						</p>
-						<p>
+						</div>
+						<div>
 							<label for="company-name">Company Name:</label>
 							<input type="text" name="company-name" id="company-name" placeholder="company name" required>
-						</p>
-						<p>
+						</div>
+						<div>
 							<label for="email">Email:</label>
 							<input type="email" placeholder="email address" required>
-						</p>
-						<p>
+						</div>
+						<div>
 							<label for="telephone-number">Telephone Number:</label>
 							<input type="tel" placeholder="555-555-5555" required>
-						</p>
-						<p>
+						</div>
+						<div>
 							<label for="message">Message:</label>
 							<input type="text" name="message" id="message" placeholder="message" required>
-						</p>
-						<p>
+						</div>
+						<div>
 							<label for="best-contact-time">Best Contact Time</label>
-							<input type="radio" name="best-contact-time" value="AM" id="AM">
-							<input type="radio" name="best-contact-time" value="PM" id="PM">
-							<input type="radio" name="best-contact-time" value="Anytime" id="Anytime">
-						</p>
+							<input type="radio" name="best-contact-time" value="AM" id="AM">AM
+							<input type="radio" name="best-contact-time" value="PM" id="PM">PM
+							<input type="radio" name="best-contact-time" value="Anytime" id="Anytime">Anytime
+						</div>
 						
 						<select for="preferred-contact" required>
 							<option value="phone">phone</option>
@@ -89,9 +89,9 @@
     const currentDate = new Date();
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     dateElement.textContent = `Date: ${currentDate.toLocaleDateString(undefined, options)}`;
-    Console.log("Hello, World!");
-    Console.log("This is my resume!");
-    Console.log(`Today's date is ${currentDate.toLocaleDateString(undefined, options)}`);
+    console.log("Hello, World!");
+    console.log("These are my career goals!");
+    console.log(`Today's date is ${currentDate.toLocaleDateString(undefined, options)}`);
 
 /*Inline Javascript to populate the date within div defined in Text and Content */
 // Inline Javascript to write an appropriate message or value to the console i.e. Console.log("Hello, World!");

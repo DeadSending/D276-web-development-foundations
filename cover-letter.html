@@ -25,8 +25,8 @@
         <main>
 		
         <h1>Cover-letter</h1>
-            <section class="section-name">
-				<p id="contact">
+            <section class="section-name-cover">
+				<div id="contact">
 				Connor Mcgaughey<br>
 				555-555-5555<br>
 				Connor.McGaughey@nov.com<br>
@@ -34,30 +34,42 @@
 				<a href="https:\\Github.com\DeadSending">Github</a><br>
 				<br>
 				<div id="date"></div><br>
-				</p>
+				</div>
 				
-				<p id="greeting+intro">
+				<div id="greeting">
 				To Whom it May Concern,<br>
-				My name is Connor McGaughey and I was inquiring into the position of Software Engineer listed on indeed.
-				Needless to say, I was thrilled when I discovered the available position as I believe I would be a 
-				excellent asset to the company and we would truly complement each other.
-				</p>
-				<p id="main">
-				I have nearly a decade of experience in scripting and programming as well as the software tools neccessary to the job.
-				I'm experienced in multiple operating systems, databases, as well as the maintenance and configuration of backend servers and
-				services, network devices, computers, hardware troubleshooting, and even version control. I'm a quick learner, a hard worker,
-				and a team player -- I will do whatever is necessary for the success of the team and the company, including learning
-				new languages and tools.
-				</p>
-				<p id="closing">
-				Once again, I want to reaffirm my commitment to doing what it takes to get the job done. I am very excited and hope 
-				to hear back from you at your earliest convenience in order to set up a meeting where we could discuss the position
-				in more detail. 
-				</p>
-				<p id="ending">
-				Sincerely,<br>
-				Connor McGaughey
-				</p>
+				</div>
+				
+				<div id="intro">
+					<p>
+						My name is Connor McGaughey and I was inquiring into the position of Software Engineer listed on indeed.
+						Needless to say, I was thrilled when I discovered the available position as I believe I would be a 
+						excellent asset to the company and we would truly complement each other.
+					</p>
+				</div>
+				
+				<div id="main">
+					<p>
+						I have nearly a decade of experience in scripting and programming as well as the software tools neccessary to the job.
+						I'm experienced in multiple operating systems, databases, as well as the maintenance and configuration of backend servers and
+						services, network devices, computers, hardware troubleshooting, and even version control. I'm a quick learner, a hard worker,
+						and a team player -- I will do whatever is necessary for the success of the team and the company, including learning
+						new languages and tools.
+					</p>
+				</div>
+				<div id="closing">
+					<p>
+						Once again, I want to reaffirm my commitment to doing what it takes to get the job done. I am very excited and hope 
+						to hear back from you at your earliest convenience in order to set up a meeting where we could discuss the position
+						in more detail. 
+					</p>
+				</div>
+				<div id="ending">
+					<div>
+						Sincerely,<br>
+						Connor McGaughey
+					</div>
+				</div>
 			</section>
         </main>
 		<script>
@@ -65,9 +77,9 @@
     const currentDate = new Date();
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     dateElement.textContent = `Date: ${currentDate.toLocaleDateString(undefined, options)}`;
-    Console.log("Hello, World!");
-    Console.log("This is my resume!");
-    Console.log(`Today's date is ${currentDate.toLocaleDateString(undefined, options)}`);
+    console.log("Hello, World!");
+    console.log("This is my cover letter!");
+    console.log(`Today's date is ${currentDate.toLocaleDateString(undefined, options)}`);
 
 /*Inline Javascript to populate the date within div defined in Text and Content */
 // Inline Javascript to write an appropriate message or value to the console i.e. Console.log("Hello, World!");

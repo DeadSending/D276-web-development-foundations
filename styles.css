@@ -199,6 +199,33 @@ table, th, td{
 	padding-left: 12%;
 	padding-right: 8%;
 }
+
+.section-name-career {
+	width: 80%;
+	border:rgb(189, 185, 185) solid 1px;
+	margin: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	border-radius: 5px;
+	align-items:center;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+.section-name-cover {
+	width: 80%;
+	border:rgb(189, 185, 185) solid 1px;
+	margin: 1%;
+	padding: 2%;
+	border-radius: 5px;
+	align-items:center;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+
 .media {
 	display: flex;
 	flex-direction: column;
@@ -211,11 +238,30 @@ table, th, td{
 #request-contact {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	padding-left: 12%;
-	padding-right: 8%;
-	
+}
+
+#contact {
+	width:100%;
+}
+
+#greeting {
+	width: 90%;
+}
+
+#ending {
+	width:90%;
+}
+
+#ending div {
+	text-align: right;
+}
+
+#intro, #main, #closing {
+	width: 90%;
+}
+
+p {
+	text-indent: 3%;
 }
 /*descendant selector use an element tag and then another tag that is a descendant tag, for ex:
 section div {...} or p span
